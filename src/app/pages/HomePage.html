@@ -1,8 +1,10 @@
-<h1>HomePage</h1>
+<h1 [class.heading]="1+2>5" >HomePage</h1>
+<h1 [ngClass]="{heading: appUser.age>5}">Page</h1>
 <div>
   <h2>{{ 2+2 }}</h2>
 </div>
 <h3>{{ headingTitle + "plus name" }}</h3>
+<h3>{{headingTitle}} plus name</h3>
 <span> name: {{ appUser.name}}</span>
 <br>
 <span>age: {{ appUser.age}}</span>
@@ -16,5 +18,5 @@
   <h1> array size 3</h1>
 }
 
-<a (click)="getUrl()" >Google</a>
+<ParentComponent />
 

@@ -3,6 +3,7 @@ import {HomePage} from './pages/HomePage';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [
     HomePage
   ],
